@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: employees
+    description: A clone of a Postgres application database.
+    database: raw
+    schema: public
+    tables:
+      - name: employees
+        description: Raw employees data.
