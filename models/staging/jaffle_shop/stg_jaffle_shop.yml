@@ -34,6 +34,8 @@ models:
               to: ref('stg_customers')
               field: customer_id
           - unique:
+             # Similarly we can also add where config as below
+             # where : "order_date >= '2018-10-31'"
              config:
                severity: warn
                warn_if: ">30"
