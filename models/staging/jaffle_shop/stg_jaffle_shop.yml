@@ -33,3 +33,8 @@ models:
           - relationships:
               to: ref('stg_customers')
               field: customer_id
+          - unique:
+             config:
+               severity: warn
+               warn_if: ">30"
+               error_if: ">50"
