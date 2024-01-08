@@ -43,3 +43,9 @@ models:
         +materialized: table
     staging:
       +materialized: view
+
+# We can also configure tests at project level
+tests:
+  jaffle_shop:
+    +severity: warn
+    +store_failures: True
