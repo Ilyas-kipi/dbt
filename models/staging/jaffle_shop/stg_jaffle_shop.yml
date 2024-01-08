@@ -34,8 +34,9 @@ models:
               to: ref('stg_customers')
               field: customer_id
           - unique:
-             # Similarly we can also add where config as below
+             # Similarly we can also add where config/limit as below
              # where : "order_date >= '2018-10-31'"
+             # limit : 10, This is used to save compute by returning only 10 failed records
              config:
                severity: warn
                warn_if: ">30"
